@@ -1,0 +1,21 @@
+{% extends "user/base.html" %}
+
+{% block section1 %}
+{% load static %}
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <!-- <p>enter email to send</p>
+        <input type="email" name="email">
+        <p>enter email subject</p>
+        <input type="text" name="subject">
+        <p>enter email message</p>
+        <textarea name="message"></textarea>
+        <p>enter html content</p>
+        <textarea name="html"></textarea> -->
+
+
+        <button type="sumbit">send email</button> 
+    </form>
+</div>
+{% endblock section1 %}
