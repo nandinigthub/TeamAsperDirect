@@ -1,0 +1,372 @@
+{% extends "user/base.html" %}
+
+{% block section1 %}
+{% load static %}
+    <!--  department-->
+    <div id="dept">
+        <div class="pt-5 pb-5 z-index-2 bg-dark">
+            <div class="text-tinytitle container p-75" data-aos="fade-right" data-aos-duration="800"><span>PRODUCTS &
+                    SERVICES</span>
+                </div>
+            <!-- first dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">Web Design & Development</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">We Build
+                        And Redesign
+                        Websites That Are Inviting, Authentic, And Increase Sales.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/webd1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/webd1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/webd1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                        Our Website Development service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="web design & Development">web design & Development <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">Marketing Management</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">Increase Your Income By Selling Online. Shopify And Shopify Plus Development.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/marketing1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/marketing1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/marketing1.jpg' %}" class="d-block w-100"
+                                        alt="Web Design & Development">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                            Our goal is to improve your customer journey, internal efficiencies and most importantly growth. Whether it’s a new build, redesign, or integrating your store with plugins, we deliver custom solutions that make managing the online facets of your business easy, scalable, and profitable.
+                        </p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="Marketing Management">Marketing Management <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- third dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">App Development</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">We Build
+                        And Redesign
+                        Websites That Are Inviting, Authentic, And Increase Sales.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/app1.jpg' %}" class="d-block w-100"
+                                        alt="app Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/app1.jpg' %}" class="d-block w-100"
+                                        alt="app Development">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/app1.jpg' %}" class="d-block w-100"
+                                        alt="app Development">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                        Our app Development service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="web design & Development">app development <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">Video Production</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">We Build
+                        And Redesign
+                        Websites That Are Inviting, Authentic, And Increase Sales.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/vd1.jpg' %}" class="d-block w-100"
+                                        alt="Video Production">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/vd1.jpg' %}" class="d-block w-100"
+                                        alt="Video Production">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/vd1.jpg' %}" class="d-block w-100"
+                                        alt="Video Production">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                        Our Video Production service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="web design & Development">Video production <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fifth dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">Media and Content</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">We Build
+                        And Redesign
+                        Websites That Are Inviting, Authentic, And Increase Sales.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/mc1.jpg' %}" class="d-block w-100"
+                                        alt="Media and Content">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/mc1.jpg' %}" class="d-block w-100"
+                                        alt="Media and Content">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/mc1.jpg' %}" class="d-block w-100"
+                                        alt="Media and Content">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                        Our media and content service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="Media and Content">Media and Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sixth dept -->
+            <div class="mt-5"></div>
+            <div id="product-1" class="container solution-header bl-grey">
+                <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
+                    <div class="display-6 font-weight-normal text-title text-light">Graphic Design</div>
+                    <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">We Build
+                        And Redesign
+                        Websites That Are Inviting, Authentic, And Increase Sales.</div>
+                </div>
+    
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6 align-items-center center-container">
+                        <div id="slide1" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static './user/assests/images/dg.jpg' %}" class="d-block w-100"
+                                        alt="Graphic Design">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/dg.jpg' %}" class="d-block w-100"
+                                        alt="Graphic Design">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{% static './user/assests/images/dg.jpg' %}" class="d-block w-100"
+                                        alt="Graphic Design">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slide1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slide1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                        <p>
+                        Our Codingservice is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
+                        <div class="get-started mt-3">
+                            <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
+                                data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
+                                title="Graphic Design">Graphic Design <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="gallery js-flickity mt-5" data-flickity-options='{ "wrapAround": true }'>
+        <img class="gallery-img gallery-cell" src="/assets/images/gallery/asperhomes-1.png" alt="Web Development for Asper Homes by Asper Technology">
+        <img class="gallery-img gallery-cell" src="/assets/images/gallery/asperhomes-2.png" alt="Web Development for Asper Homes by Asper Technology">
+        <img class="gallery-img gallery-cell" src="/assets/images/gallery/asperhomes-3.png" alt="Web Development for Asper Homes by Asper Technology">
+        <img class="gallery-img gallery-cell" src="/assets/images/gallery/asperhomes-4.png" alt="Web Development for Asper Homes by Asper Technology">
+    </div>
+
+{% endblock section1 %}

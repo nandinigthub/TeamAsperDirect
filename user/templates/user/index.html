@@ -3,35 +3,41 @@
 <!-- hero section -->
 {% block section1 %}
 {% load static %}
-    <!-- hero section -->
-    <section class="hero">
-        <div class="container">
-            <div class="row my-5">           
-              <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+<!-- hero section -->
+<section class="hero">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
                 <h1>About Us</h1>
-                <p>ASPER is a team of enthusiastic designers and developers who unite under a hood to promote technical ambience. We recognise the requirements of our customers entirely and assure them of our quality work.<br>
-                    Our team has worked on various vital projects of some remarkable companies, startups, events; like TEDxRGPV, Tritaal, Kaimur Publications, Bhoj Rasayan, Shankhnaad 2019,  Convolution 2019, Vocal Heart etc.
+                <p>ASPER is a team of enthusiastic designers and developers who unite under a hood to promote technical
+                    ambience. We recognise the requirements of our customers entirely and assure them of our quality
+                    work.<br>
+                    Our team has worked on various vital projects of some remarkable companies, startups, events; like
+                    TEDxRGPV, Tritaal, Kaimur Publications, Bhoj Rasayan, Shankhnaad 2019, Convolution 2019, Vocal Heart
+                    etc.
                     <br>
-                    Asper is also the official Design and Development society of UIT-RGPV, Bhopal (M.P. India), wherein interested students are provided with an excellent platform to hone these skills. 
-                    </p>
+                    Asper is also the official Design and Development society of UIT-RGPV, Bhopal (M.P. India), wherein
+                    interested students are provided with an excellent platform to hone these skills.
+                </p>
                 <button type="button" class="btn btn-outline" data-bs-toggle="tooltip" data-bs-placement="right"
-                  title="get to know us"><a href="{% url 'user-home' %}">
-                    Know More</a>
+                    title="get to know us"><a href="{% url 'user-home' %}">
+                        Know More</a>
                 </button>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
-                <figure>
-                  <img src="{% static './user/assests/images/girl.png' %}" alt="About image" class="img-fluid about_img" />
-                </figure>
-              </div>
             </div>
-          </div>
-    </section>
+
+            <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+                <figure>
+                    <img src="{% static './user/assests/images/girl.png' %}" alt="About image"
+                        class="img-fluid about_img" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    <!-- about -->
-    <div id="about">
+<!-- about -->
+<div id="about">
     <div class="about-container pt-5 pb-5 light-bg1 z-index-2">
         <div class="text-tinytitle container p-75" data-aos="fade-right" data-aos-duration="800"><span>WHO WE
                 ARE</span></div>
@@ -39,29 +45,31 @@
         <div class="container mt-3">
             <div class="row2">
                 <div class="col-md-10 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
-                    <div class="display-6 font-weight-normal text-title text-dark">Oour End-to-End design & developement Team</div>
+                    <div class="display-6 font-weight-normal text-title text-dark">Our End-to-End design & developement
+                        Team</div>
                     <div class="col-md-7 about-desc text-muted text-left text-value pt-3">Our team strives to create
                         extravagant & impactful content that will increase your client retention. From overall
                         design to functionality, your website will be 100% custom to you and your brand.
                         <div class="about-learn-container pt-3">
-                            <button type="button" class="btn btn-outline" data-bs-toggle="tooltip" data-bs-placement="right"
-                  title="get to know us"><a href="{% url 'user-home' %}">
-                    Know More</a>
-                </button>
-                          </button>
+                            <button type="button" class="btn btn-outline" data-bs-toggle="tooltip"
+                                data-bs-placement="right" title="get to know us"><a href="{% url 'user-home' %}">
+                                    Know More</a>
+                            </button>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
 
-    <!--  department-->
-    <div id="dept">
-    <div class="pt-5 pb-5 z-index-2 bg-dark">
+<!--  department-->
+<div id="dept">
+    <div class="pt-5  z-index-2 bg-dark">
         <div class="text-tinytitle container p-75" data-aos="fade-right" data-aos-duration="800"><span>PRODUCTS &
-                SERVICES</span></div>
+                SERVICES</span>
+        </div>
         <!-- first dept -->
         <div class="mt-5"></div>
         <div id="product-1" class="container solution-header bl-grey">
@@ -101,22 +109,24 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                    Our Website Development service is designed to take your organization’s website to the next
-                    level.
-                    Our team strives to create extravagant & impactful content that will increase your client
-                    retention.
-                    From overall design to functionality, your website will be 100% custom to you and your
-                    brand.</p>
+                        Our Website Development service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="web design & Development">web design & Development <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="web design & Development">web design & Development <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -126,7 +136,8 @@
         <div id="product-1" class="container solution-header bl-grey">
             <div class="col-12 text-left p-75" data-aos="fade-in" data-aos-duration="1600">
                 <div class="display-6 font-weight-normal text-title text-light">Marketing Management</div>
-                <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">Increase Your Income By Selling Online. Shopify And Shopify Plus Development.</div>
+                <div class="display-6b subtext-desc text-left pb-3 text-muted text-left text-greytitle">Increase Your
+                    Income By Selling Online. Shopify And Shopify Plus Development.</div>
             </div>
 
             <div class="row mt-3 text-center">
@@ -158,18 +169,22 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                        Our goal is to improve your customer journey, internal efficiencies and most importantly growth. Whether it’s a new build, redesign, or integrating your store with plugins, we deliver custom solutions that make managing the online facets of your business easy, scalable, and profitable.
+                        Our goal is to improve your customer journey, internal efficiencies and most importantly growth.
+                        Whether it’s a new build, redesign, or integrating your store with plugins, we deliver custom
+                        solutions that make managing the online facets of your business easy, scalable, and profitable.
                     </p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="Marketing Management">Marketing Management <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="Marketing Management">Marketing Management <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -213,22 +228,24 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                    Our app Development service is designed to take your organization’s website to the next
-                    level.
-                    Our team strives to create extravagant & impactful content that will increase your client
-                    retention.
-                    From overall design to functionality, your website will be 100% custom to you and your
-                    brand.</p>
+                        Our app Development service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="web design & Development">app development <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="web design & Development">app development <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -272,22 +289,24 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                    Our Video Production service is designed to take your organization’s website to the next
-                    level.
-                    Our team strives to create extravagant & impactful content that will increase your client
-                    retention.
-                    From overall design to functionality, your website will be 100% custom to you and your
-                    brand.</p>
+                        Our Video Production service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="web design & Development">Video production <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="web design & Development">Video production <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -331,22 +350,24 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                    Our media and content service is designed to take your organization’s website to the next
-                    level.
-                    Our team strives to create extravagant & impactful content that will increase your client
-                    retention.
-                    From overall design to functionality, your website will be 100% custom to you and your
-                    brand.</p>
+                        Our media and content service is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="Media and Content">Media and Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="Media and Content">Media and Content <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -390,118 +411,42 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
+                <div
+                    class="col-md-5 service-text text-muted text-value d-flex justify-content-center align-items-start flex-column text-left">
                     <p>
-                    Our Codingservice is designed to take your organization’s website to the next
-                    level.
-                    Our team strives to create extravagant & impactful content that will increase your client
-                    retention.
-                    From overall design to functionality, your website will be 100% custom to you and your
-                    brand.</p>
+                        Our Codingservice is designed to take your organization’s website to the next
+                        level.
+                        Our team strives to create extravagant & impactful content that will increase your client
+                        retention.
+                        From overall design to functionality, your website will be 100% custom to you and your
+                        brand.</p>
                     <div class="get-started mt-3">
                         <a class="btn get-started-btn" href="{% url 'user-dept' %}" data-aos="fade-right"
                             data-aos-duration="1600" data-aos-anchor-placement="top-bottom"
-                            title="Graphic Design">Graphic Design <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                          </svg></a>
+                            title="Graphic Design">Graphic Design <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- register -->
-    <div class="container">
-        <div class="popup-container mt-5 mb-5" data-aos="zoom-in" data-aos-duration="1600"
-            data-aos-anchor-placement="top-bottom">
-            <a class="popup-link" href="{%url 'register' %}">
-                <span class="popup-title justify-space"><span><span class="color-blue">Ready To Get Started?
-                        </span>Click here to register</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                  </svg>
-            </a>
-        </div>
-    </div>
 
-    </div>
 
-<!-- form -->
-
-<div class="contact-box">
-    <div class="container">
-        <div class="row mt-3 justify-content-center align-items-center text-center">
-            <div class="contact-subtitle">Have an idea?</div>
-            <div class="contact-title">Let's Make It A Reality.</div>
-            <div class="contact-info text-muted">We are always open to discussing new projects, creative
-                ideas,
-                or
-                opportunities to create your new vision.</div>
-            <!-- <div class="col-md-6 mt-4">
-                <div class="successMsg2"><i class="fas fa-check-circle successIcon mb-3" aria-hidden="true"></i>
-                    <br>
-                    Your message has been successfully sent. <br>Our team will reach out within 72 hours!
-                </div> -->
-                <form class="form-contact">
-                    <div class="row">
-                        <div class="col-md mb-3">
-                            <div class="form-floating">
-                                <input type="name" class="form-control contact-company"
-                                    placeholder="Company Name" value="">
-                                <label for="companyname">Company Name</label>
-                            </div>
-                        </div>
-                        <div class="col-md mb-3">
-                            <div class="form-floating">
-                                <select class="form-select contact-service" id="floatingSelect"
-                                    aria-label="Select an option">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Business Website">Graphic Design</option>
-                                    <option value="Ecommerce Development">E-Commerce Development</option>
-                                    <option value="Marketing">Marketing & Analytics</option>
-                                </select>
-                                <label for="floatingSelect">Service Type</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md mb-3">
-                            <div class="form-floating">
-                                <input type="name" class="form-control contact-name" placeholder="Full Name"
-                                    value="">
-                                <label for="fullname">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="col-md mb-3">
-                            <div class="form-floating">
-                                <input type="email" class="form-control contact-email"
-                                    placeholder="Email Address" value="">
-                                <label for="emailaddress">Email Address</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md mb-3">
-                        <div class="form-floating">
-                            <textarea class="form-control contact-message" placeholder="Message"
-                                style="min-height: 100px; max-height: 250px;"></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md mb-3 contact-check-box">
-                        <div class="form-floating">
-                            <input type="check" class="form-control contact-checker" placeholder="Form Checker"
-                                value="">
-                            <label for="check">Form Checker</label>
-                        </div>
-                    </div> -->
-                    <button class="btn btn-outline-dark modalBtn contactSubmitBtn">Send <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                      </svg></button>
-                </form>
+        <!-- register -->
+        <div class="container text-center">
+            <div class="popup-container mt-5 mb-5" data-aos="zoom-in" data-aos-duration="1600"
+                data-aos-anchor-placement="top-bottom">
+                <a class="popup-link" href="{%url 'register' %}">
+                    <span class="popup-title justify-space"><span><span class="color-blue">Ready To Get Started?
+                            </span>Click here to register</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                </a>
             </div>
         </div>
     </div>

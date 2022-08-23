@@ -1,21 +1,54 @@
 {% extends "user/base.html" %}
-
+{% load crispy_forms_tags %}
 {% block section1 %}
 {% load static %}
-<div class="container">
+<style>
+    input , textarea{
+        border: var(--primary-color)  2px solid;
+        border-radius: 5px;
+        width: 50%;
+        margin:10px 0;
+        /* box-shadow: 2px red solid; */
+    }
+    ::placeholder{
+        padding-left: 12px;
+        
+    }
+
+    a.ml-2{
+        color: #333;
+    }
+
+    a.ml-2:hover{
+        color: #333 !important;
+    }
+
+</style> 
+<div class="container text-dark">
     <form method="post">
         {% csrf_token %}
-        <!-- <p>enter email to send</p>
-        <input type="email" name="email">
-        <p>enter email subject</p>
-        <input type="text" name="subject">
-        <p>enter email message</p>
-        <textarea name="message"></textarea>
-        <p>enter html content</p>
-        <textarea name="html"></textarea> -->
-
-
-        <button type="sumbit">send email</button> 
+        <p>Enter recipient:</p>
+        <input type="email" name="email" placeholder="write your recipient"><br>
+        <p>Enter Subject:</p>
+        <input type="text" name="subject" placeholder="write your subject here"><br>
+        <p>Enter message:</p>
+        <textarea name="message" placeholder="write your message here" style="height:150px;" ></textarea><br>
+        <!-- <p>enter html content</p>
+        <textarea name="html"></textarea><br> -->
+        <!-- <button type="sumbit">send email</button>  -->
+        <button class="btn" type="submit" style="margin:10px 0;">Send Email</button>
+        {{ form|crispy }}        
     </form>
+
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Tired to type? send our templates <a class="ml-2" href="{% url 'template' %}" >See Templates</a>
+        </small>
+    </div>
 </div>
 {% endblock section1 %}
+
+{% block section2 %}
+{% endblock section2  %}
+
+
