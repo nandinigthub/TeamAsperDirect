@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.core.mail import EmailMultiAlternatives
 from asperdirect.settings import EMAIL_HOST_USER
 from django.core.mail import BadHeaderError, send_mass_mail
-# from django.core.mail import  send_mail
+from django.core.mail import  send_mail
 from django.core.mail import EmailMessage
 from .models import Email
 from django.core import mail
@@ -14,8 +14,7 @@ def email(request):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
         email= request.POST.get('email')
-        # html_content = request.POST.get('html')
-        # msg.attach_alternative(html_content, "text/html")
+        attach = request.FILES.getlist('attach')
 
         # print('subject',subject )
         # print('message',message )
@@ -23,10 +22,8 @@ def email(request):
         # print('html code',html_content)
 
         msg = EmailMultiAlternatives((subject), (message), EMAIL_HOST_USER, [email])
-        # msg.attach_alternative(html_content, "text/html")
-        # message.attach_file('/images/weather_map.png')
+        msg.attach(attach.)
         msg.send()
-
 
     return render(request, 'email/email.html')
 

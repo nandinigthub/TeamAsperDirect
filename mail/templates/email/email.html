@@ -1,10 +1,24 @@
 {% extends "user/base.html" %}
 {% load crispy_forms_tags %}
+
+  
+{% block css1 %}
+{% load static %}
+<link rel="stylesheet" type='text/css' href="{% static '/user/assests/css/style.css' %}"> 
+{% endblock css1 %}
+
+{% block css2 %}
+<link rel="stylesheet" type='text/css' href="{% static '/user/assests/css/utilities.css' %}"> 
+{% endblock css2 %}
+
+{% block section %}
+{% endblock section %}
+
 {% block section1 %}
 {% load static %}
 <style>
     input , textarea{
-        border: var(--primary-color)  2px solid;
+        border: #B00E15  2px solid;
         border-radius: 5px;
         width: 50%;
         margin:10px 0;
@@ -23,32 +37,219 @@
         color: #333 !important;
     }
 
-</style> 
-<div class="container text-dark">
-    <form method="post">
-        {% csrf_token %}
-        <p>Enter recipient:</p>
-        <input type="email" name="email" placeholder="write your recipient"><br>
-        <p>Enter Subject:</p>
-        <input type="text" name="subject" placeholder="write your subject here"><br>
-        <p>Enter message:</p>
-        <textarea name="message" placeholder="write your message here" style="height:150px;" ></textarea><br>
-        <!-- <p>enter html content</p>
-        <textarea name="html"></textarea><br> -->
-        <!-- <button type="sumbit">send email</button>  -->
-        <button class="btn" type="submit" style="margin:10px 0;">Send Email</button>
-        {{ form|crispy }}        
-    </form>
+    /* buttons */
+.btn1 {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #FF151F, #050505);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
 
-    <div class="border-top pt-3">
-        <small class="text-muted">
-            Tired to type? send our templates <a class="ml-2" href="{% url 'template' %}" >See Templates</a>
-        </small>
-    </div>
-</div>
+.btn1-outline {
+    background-color: transparent;
+}
+
+.btn1:hover {
+    transform: scale(0.98);
+    color: #fff !important;
+}
+
+a{
+  color: #333 !important;
+}
+
+#footer h4, #footer h5{
+  color: #fff;
+}
+</style> 
+
 {% endblock section1 %}
 
 {% block section2 %}
+{% load static %}
+
+<header id="main-nav">
+    <div class="left-icons">
+      <a class="navbar-brand" href="{% url 'user-home' %}" style="color: #333;">TeamAsperDirect </a>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search mail">
+      </div>
+  
+      {% if user.is_authenticated %}
+      <a class="nav-item nav-link" href="{% url 'profile' %}">profile </a>
+      <a class="nav-item nav-link" href="{% url 'logout' %}">Log out </a>
+
+      {% else %}
+      <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+      <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+
+      {% endif %}
+    </div>
+  </header>
+
+  <div id="main-container">
+
+    <div class="flex-container">
+      <!-- Left Navigation -->
+      <div class="left-nav">
+        <div class="compose">
+          <div class="btn">
+            <img src="{% static './user/assests/images/compose.png' %}" alt="">
+            <p>Compose</p>
+          </div>
+        </div>
+
+        <div class="nav-list">
+          <a href="#"><span class="header">Inbox</span><span class="count">1,123</span></a>
+          <a href="#">Starred</a>
+          <a href="#">Snoozed</a>
+          <a href="#">Sent</a>
+          <a href="#">Drafts</a>
+          <a href="#">Call log</a>
+          <a href="#">Junk</a>
+          <a href="#">SMS</a>
+          <a href="#">Unwanted</a>
+          <a href="#"></i>More</a>
+        </div>
+
+
+        <div class="hangouts">
+          <h2>Hangouts</h2>
+          <div class="user"><img class="rounded-circle account-img" src="{{ user.profile.image.url }}"> {{ user.username }}
+            <a href="#"></a>
+          </div>
+
+          
+        </div>
+
+      </div>
+
+      <!-- Main Content / mails list -->
+      <div class="main-content">
+
+        <div class="content-nav">
+          <div class="left-icons">
+            <div class="select"><input type="checkbox">
+
+            </div>
+
+          </div>
+
+          <div class="right-icons">
+            <span class="order">1-50 0f 2,828</span>
+          </div>
+        </div>
+
+        <div class="mail-box">
+
+          <div class="mail-header">
+
+            <div class="mail-header-item">
+              <div class="icon">
+              </div>
+              <div class="content">
+                <h4>Primary</h4>        
+              </div>
+            </div>
+
+            <div class="mail-header-item">
+              <div class="icon">
+              </div>
+              <div class="content">
+                <h4>Social <span class="count blue">50 new</span></h4>
+                <p class="sub-text">Jumia Service, Amazon, Wish, Ebay</p>        
+              </div>
+            </div>
+
+            <div class="mail-header-item">
+              <div class="icon">
+              </div>
+              <div class="content">
+                <h4>Promotions <span class="count green">45 new</span></h4>
+                <p class="sub-text">YouTube, Quora Digest, Instagram</p>        
+              </div>
+            </div>
+                  
+          </div>
+
+          <!-- mailing lists -->
+
+          
+          <div class="container text-dark">
+            <h4>New Message</h4>
+            <form method="post">
+                {% csrf_token %}
+                <p>To:</p>
+                <input type="email" name="email" placeholder="write your recipient"><br>
+                <p>subject:</p>
+                <input type="text" name="subject" placeholder="write your subject here"><br>
+                <p>Enter message:</p>
+                <textarea name="message" placeholder="write your message here" style="height:150px;" ></textarea><br>
+                <p>attach</p>
+                <input type="file" id="attach" name="filename">    
+                            
+
+                {% if user.is_authenticated %}
+                <button class="btn1" type="submit" style="margin:10px 0;" > Send Email</button>
+                {% else %}
+                <button class="btn1" type="submit" onclick="myFunction()" style="margin:10px 0;" >Send Email</button>
+                {% endif %}
+                {{ form|crispy }}        
+            </form>
+        
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Tired to type? send our templates <a class="ml-2" href="{% url 'template' %}" >See Templates</a>
+                </small>
+            </div>
+        </div>
+
+        </div>
+
+        <footer class="content-footer">
+          <div class="left-info">
+            <p>1.53 GB (10%) of 15 GB used</p>
+            <a href="#">Manage</a>
+          </div>
+          <div class="right-info">
+            <p>Last account activity: 54 minutes ago</p>
+            <a href="#">Details</a>
+          </div>
+        </footer>
+                 
+    </div>
+
+    <!-- Right Navigation -->
+  <div class="right-nav">
+
+        
+      <div class="first-column">
+        {% load static %}
+        <img src="{% static './user/assests/images/calendar.png' %}" alt="calender">
+        <img src="{% static './user/assests/images/keep.png' %}" alt="keep">
+        <img src="{% static './user/assests/images/tasks.png' %}" alt="tasks">
+      </div>
+      
+  </div>
+
+  </div>
+
+
+  </div>
 {% endblock section2  %}
 
+{% block js%}
+
+<script>
+  function myFunction() {
+    alert("Login to send mail");
+  }
+  </script>
+  
+{% endblock js%}
 

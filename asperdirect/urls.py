@@ -43,6 +43,8 @@ urlpatterns = [
 
     path('', include ('user.urls')),
     path('mail/', include ('mail.urls')),
+
+
 ]
 
 
