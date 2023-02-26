@@ -160,7 +160,7 @@ a{
             <div class="mail-header-item">
               <div class="icon">
               </div>
-              <div class="content">
+              <div class="content mt-3">
                 <h4>Social <span class="count blue">50 new</span></h4>
                 <p class="sub-text">Jumia Service, Amazon, Wish, Ebay</p>        
               </div>
@@ -169,7 +169,7 @@ a{
             <div class="mail-header-item">
               <div class="icon">
               </div>
-              <div class="content">
+              <div class="content mt-3">
                 <h4>Promotions <span class="count green">45 new</span></h4>
                 <p class="sub-text">YouTube, Quora Digest, Instagram</p>        
               </div>
@@ -186,12 +186,21 @@ a{
                 {% csrf_token %}
                 <p>To:</p>
                 <input type="email" name="email" placeholder="write your recipient"><br>
+
+                <!-- <input type="text" name="email" id="inputText"/>
+                <button type="button" onclick="pushData()">Show</button>
+                <p id="pText"></p> -->
+                
+                <!-- {% for i in res %}
+                pval = pval + res[i] + ",";
+                {% endfor %} -->
+
                 <p>subject:</p>
                 <input type="text" name="subject" placeholder="write your subject here"><br>
                 <p>Enter message:</p>
                 <textarea name="message" placeholder="write your message here" style="height:150px;" ></textarea><br>
-                <p>attach</p>
-                <input type="file" id="attach" name="filename">    
+                <!-- <p>Attachement:</p>
+                <input type="file" name="attach"> -->
                             
 
                 {% if user.is_authenticated %}
@@ -249,6 +258,38 @@ a{
   function myFunction() {
     alert("Login to send mail");
   }
+
+
+       
+ 
+            // create an array
+            var res = [];
+            
+            function pushData()
+            {
+                // get value from the input text
+                var inputText = document.getElementById('inputText').value;
+                
+                // append data to the array
+                res.push(inputText);
+                
+                var pval = "";
+                
+                for(i = 0; i < res.length; i++)
+                {
+                    pval = pval + res[i] + ",";
+                }
+
+                
+                // display array data
+                document.getElementById('pText').innerHTML = pval;
+            }
+            
+
+            const parsed = JSON.parse(res);
+
+          console.log(parsed);
+
   </script>
   
 {% endblock js%}

@@ -88,6 +88,10 @@ span{
     color: #fff !important;
 }
 
+/* .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 1, 1, 0.626);
+} */
+
 /* Navbar */
 
 .navbar-dark .navbar-brand {
